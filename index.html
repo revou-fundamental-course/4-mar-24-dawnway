@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <head>
+        <h1>Cari Tahu <i>Body Mass Index</i> Anda</h1>
+    </head>
+    <main>
+        <span class="content">
+            <span class="input-view">
+                <span class="view-title">Form BMI</span>
+                <span style="text-indent: 5%;" class="BMI-notes"><i>Body Mass Index</i> adalah nilai yang didapat dari perbandingan berat dan tinggi badan seseorang.
+                     <i>Body Mass Index</i> atau BMI sering digunakan sebagai tolak ukur kebugaran seseorang. </span>
+                <section class="form-input-BMI">
+                    <label>Jenis Kelamin <br></label>
+                    <input type="radio" name="Gender" id="gender-male">
+                    <label for="gender-male" class="radio-label">Laki-laki</label>
+                    <input type="radio" name="Gender" id="gender-female">
+                    <label for="gender-female" class="radio-label">Perempuan <br></label>
+                    <label>Umur(tahun)</label>
+                    <input type="text" name="Age" id="PersonAge" placeholder="tahun"><br>
+                    <label>Berat Badan(kg)</label>
+                    <input type="text" id="Body-Weight" placeholder="kg"><br>
+                    <label>Tinggi Badan(cm)</label>
+                    <input type="text" id="Body-Height" placeholder="cm"><br>
+                    <button onclick="BodyMassIndexCalc()">Hitung BMI</button>
+                    <button>Reset</button>
+                </section>
+                <span class="BMI-notes">catatan :</span><br>
+                <span class="BMI-notes"></span>
+            </span>
+            <span class="output-view">
+                <span class="view-title">Hasil</span>
+                <section class="Output-BMI">
+                    <label>BMI Anda adalah<br></label>
+                    <label id="Body-Mass-Index">0</label>
+            </span>
+        </span>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
