@@ -9,36 +9,45 @@
         <h1>Cari Tahu <i>Body Mass Index</i> Anda</h1>
     </head>
     <main>
-        <span class="content">
-            <span class="input-view">
-                <span class="view-title">Form BMI</span>
-                <span style="text-indent: 5%;" class="BMI-notes"><i>Body Mass Index</i> adalah nilai yang didapat dari perbandingan berat dan tinggi badan seseorang.
-                     <i>Body Mass Index</i> atau BMI sering digunakan sebagai tolak ukur kebugaran seseorang. </span>
+        <div class="content">
+            <div class="input-view">
+                <div class="view-title">Form BMI <br></div>
+                <div class="BMI-notes"><i>Body Mass Index</i> adalah nilai yang didapat dari perbandingan berat dan tinggi badan seseorang.
+                     <i>Body Mass Index</i> atau BMI sering digunakan sebagai tolak ukur sederhana untuk menentukan kebugaran seseorang. </div>
                 <section class="form-input-BMI">
                     <label>Jenis Kelamin <br></label>
-                    <input type="radio" name="Gender" id="gender-male">
+                    <input type="radio" name="Gender" id="gender-male" onclick="malegraph()">
                     <label for="gender-male" class="radio-label">Laki-laki</label>
-                    <input type="radio" name="Gender" id="gender-female">
+                    <input type="radio" name="Gender" id="gender-female" onclick="femalegraph()">
                     <label for="gender-female" class="radio-label">Perempuan <br></label>
-                    <label>Umur(tahun)</label>
-                    <input type="text" name="Age" id="PersonAge" placeholder="tahun"><br>
                     <label>Berat Badan(kg)</label>
-                    <input type="text" id="Body-Weight" placeholder="kg"><br>
+                    <input type="text" class="input-box" id="Body-Weight" placeholder="kg"><br>
                     <label>Tinggi Badan(cm)</label>
-                    <input type="text" id="Body-Height" placeholder="cm"><br>
-                    <button onclick="BodyMassIndexCalc()">Hitung BMI</button>
-                    <button>Reset</button>
+                    <input type="text" class="input-box" id="Body-Height" placeholder="cm"><br>
+                    <button onclick="BodyMassIndexCalc();showimage()">Hitung BMI</button>
+                    <button onclick="Emptyall()">Reset</button>
                 </section>
-                <span class="BMI-notes">catatan :</span><br>
-                <span class="BMI-notes"></span>
-            </span>
-            <span class="output-view">
-                <span class="view-title">Hasil</span>
+                <div class="BMI-notes" style="text-align: left;" >Keterbatasaan BMI sebagai tolak ukur :<br></div>
+                <ol style="text-align: left;">
+                    <li>BMI tidak dapat membedakan antara berat lemak, berat otot, dan berat tulang,</li>
+                    <li>BMI tidak mempertimbangkan perbedaan fisik antara ras maupun jenis kelamin,</li>
+                    <li>Perbedaan lingkungan hidup dan kondisi khusus juga tidak diperhitungkan dalam BMI</li>
+                </ol>
+                <div class="BMI-notes" style="text-align: left;">Tetapi, BMI tetap bisa digunakan sebagai pedoman umum untuk menentukan berat badan ideal.</div>
+            </div>
+            <div class="output-view">
+                <div class="view-title">Hasil <br></div>
                 <section class="Output-BMI">
-                    <label>BMI Anda adalah<br></label>
-                    <label id="Body-Mass-Index">0</label>
-            </span>
-        </span>
+                    <div>BMI Anda adalah<br></div>
+                    <div id="Body-Mass-Index">0</div>
+                    <div id="BMI-Graph-Area">
+                        <img src="" id="BMI-Graph" alt="">
+                    </div>
+                    <div class="BMI-notes">Berdasarkan BMI anda, kemungkinan besar anda termasuk kategori</div>
+                    <div id="BMI-Classification">mohon input data</div>
+                </section>
+                </div>
+            </div>
     </main>
     <script src="js/script.js"></script>
 </body>

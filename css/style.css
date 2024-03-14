@@ -1,9 +1,21 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e7e3;
 }
 
 h1{
     text-align: center;
+}
+
+button{
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .content{
@@ -14,38 +26,67 @@ h1{
     position: relative;bottom: 2px;
 }
 
+.BMI-notes{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 .input-view{
-    display: flex;
+    text-align: center;
     width: 50%;
-    flex-direction: column;
     margin-right: 2.5%;
 }
 
 .output-view{
-    display: flex;
+    text-align: center;
     width: 100%;
-    flex-direction: column;
     margin-left: 2.5%;
 }
 
 .view-title{
     font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 4px;
-}
-
-button{
-    border-radius: 3px;
+    font-weight: bolder;
+    margin-bottom: 4%;
 }
 
 .form-input-BMI{
-    background-image: radial-gradient(#8ae4ff,#f0fafc);
+    background-image: radial-gradient(#8dc6f2,#c0c1c2);
     width: 100%;
     border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-box{
+    text-align: right;
+    border-radius: 3px;
+}
+
+#Body-Weight{
+    margin-left: 10px;
 }
 
 .Output-BMI{
-    background-image: radial-gradient(#8ae4ff,#f0fafc);
+    background-image: radial-gradient(#8dc6f2,#c0c1c2);
     width: 100%;
     border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#Body-Mass-Index{
+    font-size: 64px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#BMI-Classification{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
