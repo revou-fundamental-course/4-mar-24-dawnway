@@ -1,10 +1,10 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e8e7e3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f5f8fc;
 }
 
 h1{
-    text-align: center;
+    text-indent: 30%;
 }
 
 button{
@@ -35,12 +35,14 @@ input{
     text-align: center;
     width: 50%;
     margin-right: 2.5%;
+    margin-left: 2.5%;
 }
 
 .output-view{
     text-align: center;
     width: 100%;
     margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .view-title{
@@ -50,7 +52,7 @@ input{
 }
 
 .form-input-BMI{
-    background-image: radial-gradient(#8dc6f2,#c0c1c2);
+    background-image: linear-gradient(#60b3fc,#055296);
     width: 100%;
     border-radius: 5px;
     padding-top: 10px;
@@ -65,11 +67,18 @@ input{
 }
 
 #Body-Weight{
-    margin-left: 10px;
+    margin-left: 9px;
 }
 
+#CalcButton{
+    background-image: linear-gradient(#04cf48,#01591e);
+}
+
+#ResetButton{
+    background-image: linear-gradient(#eb0202,#940303);
+}
 .Output-BMI{
-    background-image: radial-gradient(#8dc6f2,#c0c1c2);
+    background-image: linear-gradient(#60b3fc,#055296);
     width: 100%;
     border-radius: 5px;
     padding-top: 10px;

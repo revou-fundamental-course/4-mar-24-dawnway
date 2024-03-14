@@ -13,7 +13,7 @@
             <div class="input-view">
                 <div class="view-title">Form BMI <br></div>
                 <div class="BMI-notes"><i>Body Mass Index</i> adalah nilai yang didapat dari perbandingan berat dan tinggi badan seseorang.
-                     <i>Body Mass Index</i> atau BMI sering digunakan sebagai tolak ukur sederhana untuk menentukan kebugaran seseorang. </div>
+                     <i>Body Mass Index</i> atau BMI sering digunakan sebagai tolak ukur sederhana untuk memperkirakan klasifikasi berat badan dan tingkat kebugaran seseorang.</div>
                 <section class="form-input-BMI">
                     <label>Jenis Kelamin <br></label>
                     <input type="radio" name="Gender" id="gender-male" onclick="malegraph()">
@@ -24,14 +24,14 @@
                     <input type="text" class="input-box" id="Body-Weight" placeholder="kg"><br>
                     <label>Tinggi Badan(cm)</label>
                     <input type="text" class="input-box" id="Body-Height" placeholder="cm"><br>
-                    <button onclick="BodyMassIndexCalc();showimage()">Hitung BMI</button>
-                    <button onclick="Emptyall()">Reset</button>
+                    <button onclick="BodyMassIndexCalc();showimage()" id="CalcButton">Hitung BMI</button>
+                    <button onclick="Emptyall()" id="ResetButton">Reset</button>
                 </section>
                 <div class="BMI-notes" style="text-align: left;" >Keterbatasaan BMI sebagai tolak ukur :<br></div>
                 <ol style="text-align: left;">
                     <li>BMI tidak dapat membedakan antara berat lemak, berat otot, dan berat tulang,</li>
                     <li>BMI tidak mempertimbangkan perbedaan fisik antara ras maupun jenis kelamin,</li>
-                    <li>Perbedaan lingkungan hidup dan kondisi khusus juga tidak diperhitungkan dalam BMI</li>
+                    <li>Perbedaan lingkungan hidup dan kondisi khusus juga tidak diperhitungkan dalam BMI.</li>
                 </ol>
                 <div class="BMI-notes" style="text-align: left;">Tetapi, BMI tetap bisa digunakan sebagai pedoman umum untuk menentukan berat badan ideal.</div>
             </div>
@@ -46,6 +46,7 @@
                     <div class="BMI-notes">Berdasarkan BMI anda, kemungkinan besar anda termasuk kategori</div>
                     <div id="BMI-Classification">mohon input data</div>
                 </section>
+                <div class="BMI-notes" id="DifferencesExplanation"></div>
                 </div>
             </div>
     </main>
