@@ -1,10 +1,14 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #f5f8fc;
+    background-color: #e0e0e0;
 }
 
 h1{
+    background-image: linear-gradient(#f7c360,#8c6c30);
     text-indent: 30%;
+    border-radius: 3px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 button{
@@ -53,9 +57,11 @@ input{
 
 .view-title{
     /*styling untuk judul sisi output dan input*/
+    background-image: linear-gradient(#f7c360,#8c6c30);
     font-size: 24px;
     font-weight: bolder;
     margin-bottom: 4%;
+    border-radius: 3px;
 }
 
 .form-input-BMI{
@@ -67,6 +73,7 @@ input{
     padding-bottom: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-style: solid;
 }
 
 .input-box{
@@ -94,6 +101,7 @@ input{
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-style: solid;
 }
 
 
