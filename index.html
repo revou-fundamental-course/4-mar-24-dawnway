@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BMI Calculator</title>
+    <title>BMI Calculator - Daniel Andhika Putra</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -10,11 +10,13 @@
     </head>
     <main>
         <div class="content">
-            <div class="input-view">
+            <div class="input-view"> 
+        <!--Kode Sisi Input-->
                 <div class="view-title">Form BMI <br></div>
                 <div class="BMI-notes"><i>Body Mass Index</i> adalah nilai yang didapat dari perbandingan berat dan tinggi badan seseorang.
                      <i>Body Mass Index</i> atau BMI sering digunakan sebagai tolak ukur sederhana untuk memperkirakan klasifikasi berat badan dan tingkat kebugaran seseorang.</div>
                 <section class="form-input-BMI">
+        <!--Kode Form Input BMI-->
                     <label>Jenis Kelamin <br></label>
                     <input type="radio" name="Gender" id="gender-male" onclick="malegraph()">
                     <label for="gender-male" class="radio-label">Laki-laki</label>
@@ -27,6 +29,7 @@
                     <button onclick="BodyMassIndexCalc();showimage()" id="CalcButton">Hitung BMI</button>
                     <button onclick="Emptyall()" id="ResetButton">Reset</button>
                 </section>
+        <!--Penjelasan Extra mengenai BMI-->
                 <div class="BMI-notes" style="text-align: left;" >Keterbatasaan BMI sebagai tolak ukur :<br></div>
                 <ol style="text-align: left;">
                     <li>BMI tidak dapat membedakan antara berat lemak, berat otot, dan berat tulang,</li>
@@ -36,6 +39,7 @@
                 <div class="BMI-notes" style="text-align: left;">Tetapi, BMI tetap bisa digunakan sebagai pedoman umum untuk menentukan berat badan ideal.</div>
             </div>
             <div class="output-view">
+        <!--Kode Sisi Output-->
                 <div class="view-title">Hasil <br></div>
                 <section class="Output-BMI">
                     <div>BMI Anda adalah<br></div>

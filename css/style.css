@@ -19,26 +19,32 @@ input{
 }
 
 .content{
+    /*membagi halaman menjadi 2*/
     display: flex;
 }
 
-.radio-label{
-    position: relative;bottom: 2px;
-}
-
 .BMI-notes{
+    /*untuk memberi ruang antara text*/
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 .input-view{
+    /*styling untuk sisi input*/
     text-align: center;
     width: 50%;
     margin-right: 2.5%;
     margin-left: 2.5%;
 }
 
+.radio-label{
+    /*styling label radio*/
+    position: relative;bottom: 2px;
+}
+
+
 .output-view{
+    /*styling untuk sisi output*/
     text-align: center;
     width: 100%;
     margin-left: 2.5%;
@@ -46,12 +52,14 @@ input{
 }
 
 .view-title{
+    /*styling untuk judul sisi output dan input*/
     font-size: 24px;
     font-weight: bolder;
     margin-bottom: 4%;
 }
 
 .form-input-BMI{
+    /*styling area Form input*/
     background-image: linear-gradient(#60b3fc,#055296);
     width: 100%;
     border-radius: 5px;
@@ -62,11 +70,13 @@ input{
 }
 
 .input-box{
+    /*Styling kotak text*/
     text-align: right;
     border-radius: 3px;
 }
 
 #Body-Weight{
+    /*Styling agar kotak text sejajar*/
     margin-left: 9px;
 }
 
@@ -78,6 +88,7 @@ input{
     background-image: linear-gradient(#eb0202,#940303);
 }
 .Output-BMI{
+    /*Styling area Output*/
     background-image: linear-gradient(#60b3fc,#055296);
     width: 100%;
     border-radius: 5px;
@@ -87,6 +98,7 @@ input{
 
 
 #Body-Mass-Index{
+    /*Styling hasil kalkulasi BMI*/
     font-size: 64px;
     font-weight: bolder;
     margin-top: 10px;
@@ -94,8 +106,19 @@ input{
 }
 
 #BMI-Classification{
+    /*Styling Klasifikasi BMI*/
     font-size: 32px;
     font-weight: bolder;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 877px) {
+    .content{
+        flex-direction: column;
+    }
+
+    .input-view{
+        width: 100%;
+    }
 }
